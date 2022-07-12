@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiKiZa API Request</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+
+<body>
+    <div class="first_half">
+        <center>
+            <h2>API Request</h2>
+            <form action="{{ url_for('api_request') }}" method="POST">
+                <input type="text" placeholder="firstname..." name="fname" required>
+                <input type="text" placeholder="lastname..." name="lname" required>
+                <input type="email" placeholder="email..." name="email" required>
+               
+                
+                <button type="submit" class="btn btn-primary">Submit</button><br>
+                
+            </form>
+        </center>
+    </div>
+
+    \
+</body>
+
+</html>
